@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BS Soluções - Serviços especializados em Elétrica e Rede. Iluminando caminhos e conectando vidas com excelência.">
+    <title>BS Soluções - Elétrica e Rede | Iluminando Caminhos e Conectando Vidas</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- Navbar Fixa -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25 5 L45 15 L45 35 L35 42 L35 25 L15 25 L15 42 L5 35 L5 15 Z" fill="currentColor"/>
+                    <rect x="20" y="30" width="4" height="8" fill="currentColor"/>
+                    <rect x="26" y="30" width="4" height="8" fill="currentColor"/>
+                </svg>
+                <div class="logo-text">
+                    <span class="logo-name">BS Soluções</span>
+                    <span class="logo-tagline">Elétrica e Rede</span>
+                </div>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link">Início</a></li>
+                <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+                <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+            
+            <a href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20um%20orçamento!" class="btn-primary nav-cta" target="_blank">Orçamento Grátis</a>
+            
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="particles-container" id="particles"></div>
+        <div class="container hero-container">
+            <h1 class="hero-title animate-on-load">Soluções Elétricas e de Rede com Excelência</h1>
+            <p class="hero-subtitle animate-on-load">Iluminando caminhos e conectando vidas</p>
+            <div class="hero-buttons animate-on-load">
+                <a href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20um%20orçamento!" class="btn-primary btn-large" target="_blank">
+                    Solicitar Orçamento
+                </a>
+                <a href="#servicos" class="btn-outline btn-large">
+                    Ver Serviços
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section class="services" id="servicos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">O que fazemos</span>
+                <h2 class="section-title">Nossos Serviços</h2>
+                <p class="section-description">Soluções completas em elétrica e rede para seu projeto</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card fade-in-up">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="12" r="8" fill="currentColor"/>
+                            <rect x="30" y="20" width="4" height="30" fill="currentColor"/>
+                            <path d="M20 35 L32 50 L44 35" stroke="currentColor" stroke-width="4" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Instalação Elétrica</h3>
+                    <p class="service-description">Projetos completos de instalação elétrica residencial, comercial e industrial com qualidade e segurança.</p>
+                    <ul class="service-features">
+                        <li>Dimensionamento de circuitos</li>
+                        <li>Quadros de distribuição</li>
+                        <li>Iluminação profissional</li>
+                    </ul>
+                </div>
+
+                <div class="service-card fade-in-up">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="24" width="48" height="24" rx="2" fill="currentColor"/>
+                            <circle cx="16" cy="36" r="3" fill="#0D0D0D"/>
+                            <circle cx="32" cy="36" r="3" fill="#0D0D0D"/>
+                            <circle cx="48" cy="36" r="3" fill="#0D0D0D"/>
+                            <line x1="20" y1="20" x2="20" y2="24" stroke="currentColor" stroke-width="2"/>
+                            <line x1="32" y1="16" x2="32" y2="24" stroke="currentColor" stroke-width="2"/>
+                            <line x1="44" y1="20" x2="44" y2="24" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Rede Cabeada</h3>
+                    <p class="service-description">Infraestrutura de rede estruturada com cabeamento Cat5e, Cat6 e fibra óptica para máxima performance.</p>
+                    <ul class="service-features">
+                        <li>Certificação de cabos</li>
+                        <li>Rack e patch panel</li>
+                        <li>Organização profissional</li>
+                    </ul>
+                </div>
+
+                <div class="service-card fade-in-up">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="20" y="28" width="24" height="16" rx="2" fill="currentColor"/>
+                            <circle cx="26" cy="36" r="2" fill="#0D0D0D"/>
+                            <path d="M10 20 Q16 12 24 20" stroke="currentColor" stroke-width="3" fill="none"/>
+                            <path d="M40 20 Q46 12 54 20" stroke="currentColor" stroke-width="3" fill="none"/>
+                            <path d="M6 28 Q16 16 28 28" stroke="currentColor" stroke-width="2.5" fill="none"/>
+                            <path d="M36 28 Q48 16 58 28" stroke="currentColor" stroke-width="2.5" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Rede Wi-Fi</h3>
+                    <p class="service-description">Projetos de rede sem fio com cobertura total, alta velocidade e estabilidade em todos os ambientes.</p>
+                    <ul class="service-features">
+                        <li>Site survey profissional</li>
+                        <li>Access points corporativos</li>
+                        <li>Roaming inteligente</li>
+                    </ul>
+                </div>
+
+                <div class="service-card fade-in-up">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="32" r="20" stroke="currentColor" stroke-width="3" fill="none"/>
+                            <path d="M32 12 L32 32 L44 32" stroke="currentColor" stroke-width="3" fill="none"/>
+                            <circle cx="32" cy="32" r="3" fill="currentColor"/>
+                            <path d="M16 16 L20 20 M48 16 L44 20 M16 48 L20 44 M48 48 L44 44" stroke="currentColor" stroke-width="2.5"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Manutenção Preventiva</h3>
+                    <p class="service-description">Inspeções regulares e manutenção programada para garantir o funcionamento perfeito de suas instalações.</p>
+                    <ul class="service-features">
+                        <li>Termografia infravermelha</li>
+                        <li>Teste de isolamento</li>
+                        <li>Relatórios detalhados</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais Section -->
+    <section class="differentials" id="diferenciais">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Por que nos escolher</span>
+                <h2 class="section-title">Nossos Diferenciais</h2>
+            </div>
+            
+            <div class="differentials-grid">
+                <div class="differential-item fade-in-up">
+                    <div class="differential-icon">⚡</div>
+                    <h3 class="differential-title">Rapidez no Atendimento</h3>
+                    <p class="differential-description">Resposta imediata e agilidade na execução dos projetos. Seu tempo é valioso para nós.</p>
+                </div>
+
+                <div class="differential-item fade-in-up">
+                    <div class="differential-icon">🔒</div>
+                    <h3 class="differential-title">Serviço com Garantia</h3>
+                    <p class="differential-description">Todos os serviços possuem garantia estendida. Trabalho de qualidade que você pode confiar.</p>
+                </div>
+
+                <div class="differential-item fade-in-up">
+                    <div class="differential-icon">📞</div>
+                    <h3 class="differential-title">Suporte 24 Horas</h3>
+                    <p class="differential-description">Atendimento disponível a qualquer momento. Emergências elétricas não esperam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Números Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item fade-in-up">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Projetos Realizados</div>
+                </div>
+
+                <div class="stat-item fade-in-up">
+                    <div class="stat-number" data-target="300">0</div>
+                    <div class="stat-label">Clientes Satisfeitos</div>
+                </div>
+
+                <div class="stat-item fade-in-up">
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-label">Anos de Experiência</div>
+                </div>
+
+                <div class="stat-item fade-in-up">
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">Satisfação Garantida</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos Section -->
+    <section class="testimonials" id="depoimentos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">O que dizem nossos clientes</span>
+                <h2 class="section-title">Depoimentos</h2>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            ★★★★★
+                        </div>
+                        <p class="testimonial-text">"Excelente serviço! A equipe da BS Soluções foi extremamente profissional e eficiente. Instalaram toda a rede elétrica da minha empresa em tempo recorde e com qualidade impecável."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">M</div>
+                            <div class="author-info">
+                                <div class="author-name">Marcos Silva</div>
+                                <div class="author-role">Empresário</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            ★★★★★
+                        </div>
+                        <p class="testimonial-text">"Precisava de uma rede Wi-Fi potente para meu escritório e a BS Soluções entregou além do esperado. Agora temos conexão estável em todos os andares. Recomendo demais!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">A</div>
+                            <div class="author-info">
+                                <div class="author-name">Ana Rodrigues</div>
+                                <div class="author-role">Arquiteta</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            ★★★★★
+                        </div>
+                        <p class="testimonial-text">"Atendimento nota 10! Tive um problema elétrico urgente e a equipe chegou em menos de 1 hora. Resolveram tudo com muita competência. Empresa séria e confiável."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">R</div>
+                            <div class="author-info">
+                                <div class="author-name">Roberto Oliveira</div>
+                                <div class="author-role">Gerente de Facilities</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-dots" id="testimonialDots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final Section -->
+    <section class="cta-final" id="contato">
+        <div class="container">
+            <div class="cta-content fade-in-up">
+                <h2 class="cta-title">Pronto para iluminar seu projeto?</h2>
+                <p class="cta-description">Entre em contato agora e receba um orçamento personalizado sem compromisso</p>
+                <a href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20um%20orçamento!" class="btn-whatsapp" target="_blank">
+                    <svg class="whatsapp-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488" fill="currentColor"/>
+                    </svg>
+                    Falar no WhatsApp
+                </a>
+                <p class="cta-response-time">⚡ Resposta em até 2 horas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg class="logo-icon" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 5 L45 15 L45 35 L35 42 L35 25 L15 25 L15 42 L5 35 L5 15 Z" fill="currentColor"/>
+                            <rect x="20" y="30" width="4" height="8" fill="currentColor"/>
+                            <rect x="26" y="30" width="4" height="8" fill="currentColor"/>
+                        </svg>
+                        <div class="logo-text">
+                            <span class="logo-name">BS Soluções</span>
+                            <span class="logo-tagline">Elétrica e Rede</span>
+                        </div>
+                    </div>
+                    <p class="footer-slogan">Iluminando caminhos e conectando vidas</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#diferenciais">Diferenciais</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li>📱 (16) 99999-9999</li>
+                        <li>📧 contato@bssolucoes.com</li>
+                        <li>📍 Ribeirão Preto - SP</li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/5516999999999" target="_blank" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 BS Soluções - Elétrica e Rede. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20mais%20informações!" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488" fill="currentColor"/>
+        </svg>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
