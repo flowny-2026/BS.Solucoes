@@ -416,6 +416,56 @@ function setViewportHeight() {
 setViewportHeight();
 window.addEventListener('resize', debounce(setViewportHeight, 100));
 
+// === HVAC Comparador Antes/Depois ===
+function comparar(e) {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const divisor = e.currentTarget.querySelector('.divisor-gold');
+    const antes = e.currentTarget.querySelector('.img-antes');
+    
+    // Pega a posição X (seja mouse ou toque)
+    let posX = (e.pageX || (e.touches ? e.touches[0].pageX : 0)) - rect.left;
+    
+    // Bloqueia para não sair das bordas
+    if (posX < 0) posX = 0;
+    if (posX > rect.width) posX = rect.width;
+    
+    // Converte para porcentagem
+    let calcPercent = (posX / rect.width) * 100;
+    
+    // Aplica no CSS
+    antes.style.width = calcPercent + "%";
+    divisor.style.left = calcPercent + "%";
+}
+
+// HVAC Button Actions
+document.addEventListener('DOMContentLoaded', () => {
+    const hvacButtons = document.querySelectorAll('.hvac-btn');
+    
+    hvacButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const service = this.getAttribute('data-service');
+            let message = '';
+            
+            switch(service) {
+                case 'instalacao':
+                    message = 'Olá! Gostaria de um orçamento para instalação de ar-condicionado.';
+                    break;
+                case 'higienizacao':
+                    message = 'Olá! Gostaria de solicitar o serviço de higienização de ar-condicionado.';
+                    break;
+                case 'manutencao':
+                    message = 'Olá! Gostaria de agendar uma manutenção de ar-condicionado.';
+                    break;
+                default:
+                    message = 'Olá! Gostaria de mais informações sobre climatização.';
+            }
+            
+            const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        });
+    });
+});
+
 // === Initialize all features on DOM ready ===
 document.addEventListener('DOMContentLoaded', () => {
     console.log('✅ All features initialized successfully!');

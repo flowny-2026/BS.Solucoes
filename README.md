@@ -1,94 +1,133 @@
-# Flowny - Desenvolvimento Web Profissional
+# BS Soluções - Elétrica, Rede e Climatização
 
-Site institucional da Flowny, empresa especializada em desenvolvimento de sites profissionais, responsivos e de alto impacto.
+Site institucional da BS Soluções, empresa especializada em serviços elétricos, infraestrutura de rede e climatização com excelência e qualidade.
 
 ## 🚀 Tecnologias Utilizadas
 
-- HTML5
-- CSS3 (Mobile-First, Flexbox, Grid)
-- JavaScript (Vanilla)
-- EmailJS (para formulário de contato)
+- HTML5 Semântico
+- CSS3 (Custom Properties, Flexbox, Grid)
+- JavaScript Vanilla (ES6+)
+- Design System Premium Dark
 
 ## 📱 Características
 
-- ✅ Design totalmente responsivo (mobile, tablet, desktop)
-- ✅ Menu hambúrguer funcional
-- ✅ Navegação suave entre seções
-- ✅ Ícones de redes sociais flutuantes
-- ✅ Formulário de contato integrado
+- ✅ Design premium dark com tema dourado
+- ✅ Totalmente responsivo (mobile-first)
+- ✅ Navegação suave e intuitiva
+- ✅ Animações e efeitos visuais
+- ✅ Comparador interativo antes/depois
+- ✅ Slider de depoimentos automático
+- ✅ Contador animado de estatísticas
+- ✅ Partículas animadas no hero
+- ✅ Botão flutuante WhatsApp
 - ✅ Otimizado para performance
-- ✅ Acessibilidade (WCAG)
+- ✅ Acessibilidade (ARIA, keyboard navigation)
+
+## 🏢 Serviços Oferecidos
+
+### ⚡ Elétrica
+- Instalação elétrica residencial/comercial
+- Dimensionamento de circuitos
+- Quadros de distribuição
+- Iluminação profissional
+
+### 🌐 Rede
+- Infraestrutura de rede cabeada
+- Certificação de cabos Cat5e/Cat6
+- Projetos Wi-Fi corporativos
+- Site survey profissional
+
+### ❄️ Climatização
+- Instalação de ar-condicionado
+- Higienização e limpeza
+- Manutenção preventiva/corretiva
+- Dimensionamento de carga térmica
 
 ## 📂 Estrutura do Projeto
 
 ```
-flowny/
+bs-solucoes/
 ├── index.html          # Página principal
 ├── css/
-│   ├── global.css      # Estilos globais e variáveis
-│   ├── header.css      # Cabeçalho e navegação
-│   ├── main.css        # Seção hero/home
-│   ├── services.css    # Seção de serviços
-│   ├── portfolio.css   # Seção sobre e portfólio
-│   ├── contact.css     # Formulário de contato
-│   ├── footer.css      # Rodapé e ícones sociais
-│   ├── mobile-menu.css # Menu mobile
-│   ├── privacy.css     # Política de privacidade
-│   └── ocultas.css     # Seções ocultas
+│   └── style.css       # Estilos unificados
 ├── js/
-│   ├── init.js         # Inicialização da página
-│   ├── main.js         # Navegação e menu
-│   ├── mobile-menu.js  # Funcionalidades do menu mobile
-│   └── contato.js      # Formulário de contato
-└── img/                # Imagens e assets
+│   └── script.js       # Funcionalidades JavaScript
+├── img/                # Imagens e assets
+├── LICENSE             # Licença do projeto
+└── README.md           # Documentação
 ```
 
-## 🔧 Configuração do EmailJS
+## 🎨 Design System
 
-Para ativar o formulário de contato:
+### Paleta de Cores
+- **Primary**: #FFD700 (Dourado)
+- **Background Dark**: #0D0D0D (Preto profundo)
+- **Background Secondary**: #1A1A1A (Cinza escuro)
+- **Background Tertiary**: #111111 (Cinza médio)
+- **Text White**: #FFFFFF (Branco)
+- **Text Gray**: #CCCCCC (Cinza claro)
+- **WhatsApp**: #25D366 (Verde WhatsApp)
 
-1. Crie uma conta em [EmailJS](https://www.emailjs.com/)
-2. Configure um serviço de email
-3. Crie um template de email
-4. No arquivo `js/contato.js`, descomente e configure:
-   ```javascript
-   emailjs.init('SUA_CHAVE_PUBLICA');
-   emailjs.send('SEU_SERVICE_ID', 'SEU_TEMPLATE_ID', formData);
-   ```
+### Tipografia
+- **Headings**: Montserrat (400, 600, 700, 800)
+- **Body**: Roboto (300, 400, 500)
 
-## 🌐 Deploy no GitHub Pages
+## 🔧 Funcionalidades Especiais
 
-1. Faça upload dos arquivos para um repositório GitHub
-2. Vá em Settings > Pages
-3. Selecione a branch `main` e pasta `/ (root)`
-4. Clique em Save
-5. Seu site estará disponível em: `https://seu-usuario.github.io/nome-do-repo/`
+### Comparador Antes/Depois
+Funcionalidade interativa que permite comparar o estado do ar-condicionado antes e depois da limpeza:
+```javascript
+function comparar(e) {
+    // Suporte a mouse e touch
+    // Controle de posição dinâmico
+    // Efeitos visuais premium
+}
+```
+
+### Slider de Depoimentos
+- Auto-play com 5 segundos
+- Navegação por dots
+- Suporte a swipe (mobile)
+- Pausa no hover
+
+### Contador Animado
+- Animação suave de números
+- Trigger por Intersection Observer
+- Formatação automática
 
 ## 📱 Responsividade
 
-O site é otimizado para:
-- 📱 Mobile: 320px - 767px
-- 📱 Tablet: 768px - 1023px
-- 💻 Desktop: 1024px+
+Breakpoints otimizados:
+- **Mobile**: 320px - 767px
+- **Tablet**: 768px - 1023px
+- **Desktop**: 1024px+
 
-## 🎨 Paleta de Cores
+## 🌐 Integração WhatsApp
 
-- Primary: #2563EB (Azul)
-- Primary Dark: #1E3A8A (Azul escuro)
-- Accent: #6366F1 (Roxo)
-- CTA: #F59E0B (Laranja)
-- Background: #F8FAFC (Cinza claro)
+Mensagens personalizadas por serviço:
+- **Instalação**: "Gostaria de um orçamento para instalação..."
+- **Higienização**: "Gostaria de solicitar higienização..."
+- **Manutenção**: "Gostaria de agendar manutenção..."
+
+## 🚀 Performance
+
+- Lazy loading de imagens
+- Debounce em eventos de scroll
+- CSS otimizado com custom properties
+- JavaScript vanilla (sem dependências)
+- Compressão de assets
 
 ## 📞 Contato
 
-- WhatsApp: (16) 99291-5540
-- Instagram: [@flowly_sites](https://www.instagram.com/flowly_sites)
-- Email: contato@flowny.com.br
+- **WhatsApp**: (11) 99999-9999
+- **Email**: contato@bssolucoes.com
+- **Localização**: Ribeirão Preto - SP
+- **Instagram**: [@bssolucoes](https://instagram.com)
 
 ## 📄 Licença
 
-© 2025 Flowny. Todos os direitos reservados.
+© 2026 BS Soluções - Elétrica e Rede. Todos os direitos reservados.
 
 ---
 
-Desenvolvido com ❤️ pela equipe Flowny
+**Iluminando caminhos e conectando vidas** ⚡
