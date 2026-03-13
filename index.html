@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -34,6 +37,7 @@
                 <li><a href="#inicio" class="nav-link">Início</a></li>
                 <li><a href="#servicos" class="nav-link">Serviços</a></li>
                 <li><a href="#ar-condicionado" class="nav-link">Climatização</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
                 <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
                 <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
                 <li><a href="#contato" class="nav-link">Contato</a></li>
@@ -250,6 +254,69 @@
         </div>
     </section>
 
+    <!-- Seção Portfólio -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="overlay-escuro"></div>
+        <div id="particles-portfolio"></div>
+        <div class="container relative z-index-2">
+            <div class="section-header">
+                <span class="section-tag">Nossos Projetos</span>
+                <h2 class="section-title">Nossos Trabalhos</h2>
+                <p class="section-description">Excelência técnica comprovada em cada instalação e manutenção</p>
+            </div>
+            
+            <div class="grid-portfolio">
+                <div class="item-portfolio fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=300&fit=crop&crop=center" alt="Instalação de Ar Condicionado Premium" loading="lazy">
+                    <div class="moldura-gold"></div>
+                    <div class="portfolio-overlay">
+                        <h4>Instalação Premium</h4>
+                        <p>Ar-condicionado residencial</p>
+                    </div>
+                </div>
+                
+                <div class="item-portfolio fade-in-up" style="animation-delay: 0.1s;">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&crop=center" alt="Manutenção Elétrica Industrial" loading="lazy">
+                    <div class="moldura-gold"></div>
+                    <div class="portfolio-overlay">
+                        <h4>Elétrica Industrial</h4>
+                        <p>Quadros e distribuição</p>
+                    </div>
+                </div>
+                
+                <div class="item-portfolio fade-in-up" style="animation-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400&h=300&fit=crop&crop=center" alt="Higienização de Ar-Condicionado" loading="lazy">
+                    <div class="moldura-gold"></div>
+                    <div class="portfolio-overlay">
+                        <h4>Higienização</h4>
+                        <p>Limpeza química completa</p>
+                    </div>
+                </div>
+                
+                <div class="item-portfolio fade-in-up" style="animation-delay: 0.3s;">
+                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=400&h=300&fit=crop&crop=center" alt="Infraestrutura de Rede" loading="lazy">
+                    <div class="moldura-gold"></div>
+                    <div class="portfolio-overlay">
+                        <h4>Rede Estruturada</h4>
+                        <p>Cabeamento profissional</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-cta fade-in-up" style="margin-top: 60px;">
+                <p class="text-secondary-gold">Quer ver mais do nosso dia a dia técnico?</p>
+                <div class="botoes-cta-wrapper">
+                    <a href="https://www.instagram.com/bssolucoes" target="_blank" rel="noopener" class="btn-instagram">
+                        <i class="fab fa-instagram"></i> Ver no Instagram
+                    </a>
+                    <a href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20um%20orçamento!" target="_blank" rel="noopener" class="btn-primary">
+                        <i class="fab fa-whatsapp"></i> Solicitar Orçamento
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Diferenciais Section -->
     <section class="differentials" id="diferenciais">
         <div class="container">
@@ -358,12 +425,27 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            ★★★★★
+                        </div>
+                        <p class="testimonial-text">"Para a NBA Store, a experiência do cliente vem em primeiro lugar, e isso inclui um ambiente perfeitamente climatizado. A BS Soluções entregou um serviço de alta qualidade, com todo o cuidado e a agilidade que nossa operação de varejo exige. Excelente parceria!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">NBA</div>
+                            <div class="author-info">
+                                <div class="author-name">Estefânia</div>
+                                <div class="author-role">Gerente da NBA Store</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="testimonial-dots" id="testimonialDots">
                     <span class="dot active" data-index="0"></span>
                     <span class="dot" data-index="1"></span>
                     <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
                 </div>
             </div>
         </div>
@@ -411,6 +493,7 @@
                         <li><a href="#inicio">Início</a></li>
                         <li><a href="#servicos">Serviços</a></li>
                         <li><a href="#ar-condicionado">Climatização</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
                         <li><a href="#diferenciais">Diferenciais</a></li>
                         <li><a href="#depoimentos">Depoimentos</a></li>
                     </ul>

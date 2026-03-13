@@ -466,6 +466,43 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// === Portfolio Particles (Optional) ===
+function createPortfolioParticles() {
+    const portfolioParticles = document.getElementById('particles-portfolio');
+    if (!portfolioParticles) return;
+    
+    const particleCount = 30;
+    
+    for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.classList.add('particle');
+        
+        // Random position
+        const leftPos = Math.random() * 100;
+        particle.style.left = `${leftPos}%`;
+        
+        // Random delay
+        const delay = Math.random() * 20;
+        particle.style.animationDelay = `${delay}s`;
+        
+        // Random duration
+        const duration = 15 + Math.random() * 10;
+        particle.style.animationDuration = `${duration}s`;
+        
+        // Random size
+        const size = 1 + Math.random() * 2;
+        particle.style.width = `${size}px`;
+        particle.style.height = `${size}px`;
+        
+        portfolioParticles.appendChild(particle);
+    }
+}
+
+// Initialize portfolio particles
+window.addEventListener('load', () => {
+    createPortfolioParticles();
+});
+
 // === Initialize all features on DOM ready ===
 document.addEventListener('DOMContentLoaded', () => {
     console.log('✅ All features initialized successfully!');
