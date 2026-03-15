@@ -83,7 +83,7 @@ ul {
 /* === Buttons === */
 .btn-primary {
     display: inline-block;
-    padding: 1rem 2.5rem;
+    padding: 0.8rem 2rem;
     background: var(--color-primary);
     color: var(--color-bg-dark);
     font-family: var(--font-heading);
@@ -93,7 +93,7 @@ ul {
     border: 2px solid var(--color-primary);
     cursor: pointer;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.95rem;
 }
 
 .btn-primary:hover {
@@ -125,8 +125,8 @@ ul {
 }
 
 .btn-large {
-    padding: 1.2rem 3rem;
-    font-size: 1.1rem;
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
 }
 
 .btn-whatsapp {
@@ -166,33 +166,60 @@ ul {
     z-index: 1000;
     background: rgba(13, 13, 13, 0.95);
     backdrop-filter: blur(10px);
-    padding: 1.2rem 0;
+    padding: 0.8rem 0;
     transition: var(--transition-normal);
 }
 
 .navbar.scrolled {
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
-    padding: 0.9rem 0;
+    padding: 0.6rem 0;
 }
 
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 1rem;
+    gap: 0.5rem;
 }
 
 .logo {
     display: flex;
     align-items: center;
     gap: 0.75rem;
+    flex-shrink: 0;
+    min-width: 0;
 }
 
 .header-logo {
-    height: 65px;
+    height: 45px;
     width: auto;
     max-width: 100%;
     display: block;
     object-fit: contain;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    min-width: 0;
+}
+
+.logo-name {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: var(--color-text-white);
+    white-space: nowrap;
+}
+
+.logo-tagline {
+    font-family: var(--font-body);
+    font-weight: 300;
+    font-size: 0.75rem;
+    color: var(--color-primary);
+    white-space: nowrap;
 }
 
 .footer-logo {
@@ -206,26 +233,6 @@ ul {
 .logo-icon {
     width: 40px;
     height: 40px;
-    color: var(--color-primary);
-}
-
-.logo-text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.2;
-}
-
-.logo-name {
-    font-family: var(--font-heading);
-    font-weight: 800;
-    font-size: 1.3rem;
-    color: var(--color-text-white);
-}
-
-.logo-tagline {
-    font-family: var(--font-body);
-    font-weight: 300;
-    font-size: 0.85rem;
     color: var(--color-primary);
 }
 
@@ -262,31 +269,31 @@ ul {
     width: 100%;
 }
 
-.nav-cta {
-    padding: 0.65rem 1.75rem;
-    font-size: 0.95rem;
-}
-
 .hamburger {
     display: none;
     flex-direction: column;
-    gap: 5px;
+    gap: 4px;
     background: none;
     border: none;
     cursor: pointer;
     padding: 0.5rem;
+    min-width: 44px;
+    min-height: 44px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
 }
 
 .hamburger span {
-    width: 28px;
-    height: 3px;
+    width: 22px;
+    height: 2px;
     background: var(--color-primary);
     border-radius: 2px;
     transition: var(--transition-normal);
 }
 
 .hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(8px, 8px);
+    transform: rotate(45deg) translate(5px, 5px);
 }
 
 .hamburger.active span:nth-child(2) {
@@ -294,7 +301,7 @@ ul {
 }
 
 .hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -7px);
+    transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* === Hero Section === */
@@ -1249,15 +1256,29 @@ section {
     }
     
     .header-logo {
-        height: 50px;
+        height: 40px;
     }
     
     .footer-logo {
         height: 45px;
     }
     
+    .logo-name {
+        font-size: 1rem;
+    }
+    
+    .logo-tagline {
+        font-size: 0.7rem;
+    }
+    
     .hamburger {
         display: flex;
+        min-width: 40px;
+        min-height: 40px;
+    }
+    
+    .hamburger span {
+        width: 20px;
     }
     
     .nav-menu {
@@ -1281,9 +1302,19 @@ section {
         right: 0;
     }
     
-    .nav-cta {
+    .mobile-cta-wrapper {
+        display: none;
+        margin-top: 2rem;
+        padding-top: 2rem;
+        border-top: 1px solid rgba(255, 215, 0, 0.2);
+    }
+    
+    .mobile-cta {
         width: 100%;
-        text-align: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 1rem 2rem;
+        font-size: 1rem;
     }
     
     .hero-buttons {
@@ -1354,17 +1385,52 @@ section {
 }
 
 @media (max-width: 480px) {
+    .nav-container {
+        padding: 0 0.75rem;
+        gap: 0.25rem;
+    }
+    
     .header-logo {
-        height: 45px;
+        height: 35px;
     }
     
     .footer-logo {
         height: 40px;
     }
     
-    .logo-icon {
-        width: 35px;
-        height: 35px;
+    .logo-name {
+        font-size: 0.9rem;
+    }
+    
+    .logo-tagline {
+        font-size: 0.65rem;
+    }
+    
+    /* Mostrar CTA dentro do menu mobile */
+    .mobile-cta-wrapper {
+        display: block;
+    }
+    
+    .hamburger {
+        min-width: 44px;
+        min-height: 44px;
+        padding: 0.75rem;
+    }
+    
+    .hamburger span {
+        width: 18px;
+    }
+    
+    .navbar {
+        padding: 0.8rem 0;
+    }
+    
+    .navbar.scrolled {
+        padding: 0.6rem 0;
+    }
+    
+    .nav-container {
+        padding: 0 1rem;
     }
     
     .logo-name {
